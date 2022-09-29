@@ -1,9 +1,17 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  // Write your algorithm here - function that isPalindrome
+  if(word.split('').reverse().join('') === word) {
+    return true
+  } else {
+    return false
+  }
 }
 
 /* 
-  Add your pseudocode here
+  Add your pseudocode here\
+  // Need a function that will return true or false if the word 'isPalindrome'
+  // that is, if it reads the same forwards and backwards
+  // Ex: `"bob"` or `"tacocat"`
 */
 
 /*
@@ -14,7 +22,7 @@ function isPalindrome(word) {
 if (require.main === module) {
   // add your own custom tests in here
   console.log("Expecting: true");
-  console.log("=>", isPalindrome("racecar"));
+  console.log("=>", isPalindrome("tacocat"));
 
   console.log("");
 
